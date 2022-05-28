@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico_OLD/Trabalho Pratico/Content/font.spritefont</SourceFile>
+  <SourceTime>2022-05-27T18:19:39.4169388+01:00</SourceTime>
+  <DestFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico_OLD/Trabalho Pratico/Content/bin/DesktopGL/Content/font.xnb</DestFile>
+  <DestTime>2022-05-27T18:20:03.0982675+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2020-08-10T17:17:54+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2020-08-10T17:17:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

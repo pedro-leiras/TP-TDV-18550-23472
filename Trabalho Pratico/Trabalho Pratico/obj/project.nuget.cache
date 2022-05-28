@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aou005Q1rj/6Oj5bAlCVbpkB43Q80gFoiF+bKgTFmkV23yY10roNVhRZAl38/KdQZZE8kD3KKLU0vXXX1tpk+g==",
+  "success": true,
+  "projectFilePath": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico_OLD\\Trabalho Pratico\\Trabalho Pratico.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pedro Leiras\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Pedro Leiras\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
