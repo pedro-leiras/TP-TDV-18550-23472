@@ -23,7 +23,7 @@ namespace Trabalho_Pratico
         private List<SoundEffect> soundEffects;
 
         private const int textureSize = 30, borderWidth = 40;
-        private int velocity, currentScore = 180;
+        private int velocity, currentScore = 0;
 
         private bool isGameOver = false, isMuted = false;
 
