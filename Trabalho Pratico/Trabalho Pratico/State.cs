@@ -1,4 +1,5 @@
-﻿using System;
+﻿//fonte: https://github.com/Oyyou/MonoGame_Tutorials
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -18,8 +19,6 @@ namespace Trabalho_Pratico
 
 
         public abstract void Draw(GameTime gameTime, SpriteBatch spriteBatch);
-
-        //public abstract void PostUpdate(GameTime gameTime);
 
         public State(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
         {

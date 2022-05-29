@@ -1,4 +1,5 @@
-﻿using System;
+﻿//fonte: https://github.com/Oyyou/MonoGame_Tutorials
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
