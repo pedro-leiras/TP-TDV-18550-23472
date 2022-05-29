@@ -13,4 +13,3 @@ Intruções:
     S/Seta para baixo: mudar direção para baixo
     P: pausa
     M: ligar/desligar música
-
