@@ -34,49 +34,64 @@ namespace Trabalho_Pratico
                 default:
                     break;
             }
-
-            ScreenBorders();
+            base.Update(gameTime);
         }
 
         public void InputKeyboard()
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.Up))
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) || Keyboard.GetState().IsKeyDown(Keys.W))
                 if (direction != Direction.Down)
                     direction = Direction.Up;
-            if (Keyboard.GetState().IsKeyDown(Keys.Down))
+            if (Keyboard.GetState().IsKeyDown(Keys.Down) || Keyboard.GetState().IsKeyDown(Keys.S))
                 if (direction != Direction.Up)
                     direction = Direction.Down;
-            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+            if (Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.A))
                 if (direction != Direction.Right)
                     direction = Direction.Left;
-            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+            if (Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.D))
                 if (direction != Direction.Left)
                     direction = Direction.Right;
         }
 
-        private bool ScreenBorders()
+        public bool ScreenBorders(int borderWidth, int textureSize)
         {
-            if(pos.X < 41) //margem de cima
+            if(pos.X < borderWidth || pos.X > screen.Width - (borderWidth + textureSize) || pos.Y < borderWidth || pos.Y > screen.Height - (borderWidth + textureSize))
             {
                 return true;
-                //pos.X = screen.Width - 42;
-            }
-            if(pos.X > screen.Width - 41) //margem de baixo
-            {
-                //pos.X = 41;
-                return true;
-            }
-            if (pos.Y < 41) //margem esquerda
-            {
-                //pos.Y = screen.Height - 42;
-                return true;
-            }
-            if (pos.Y > screen.Height - 41) //margem direita
-            {
-                return true;
-                //pos.Y = 41;
             }
             return false;
+        }
+
+        public void GrowSnake(List<SnakePart> snakeParts, Texture2D snakePartsTexture, int textureSize)
+        {
+            SnakePart body = new SnakePart(snakePartsTexture, new Vector2(snakeParts[snakeParts.Count - 1].Pos.X, snakeParts[snakeParts.Count - 1].Pos.Y), snakeParts[snakeParts.Count - 1].Direction, screen);
+
+            switch (snakeParts[snakeParts.Count - 1].Direction)
+            {
+                case Direction.Up:
+                    body.Pos = new Vector2(body.Pos.X, body.Pos.Y + textureSize);
+                    break;
+                case Direction.Down:
+                    body.Pos = new Vector2(body.Pos.X, body.Pos.Y - textureSize);
+                    break;
+                case Direction.Left:
+                    body.Pos = new Vector2(body.Pos.X + textureSize, body.Pos.Y);
+                    break;
+                case Direction.Right:
+                    body.Pos = new Vector2(body.Pos.X - textureSize, body.Pos.Y);
+                    break;
+                default:
+                    break;
+            }
+            snakeParts.Add(body);
+        }
+
+        public void ChangeDirection(List<SnakePart> snakeParts)
+        {
+            for (int i = snakeParts.Count - 1; i > 0; i--)
+            {
+                snakeParts[i].Direction = snakeParts[i - 1].Direction;
+            }
         }
     }
 }

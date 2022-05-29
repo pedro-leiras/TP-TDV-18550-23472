@@ -1,5 +1,3 @@
-D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\cabeca_cima.xnb
-D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\fruta.xnb
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.exe
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.deps.json
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.runtimeconfig.json
@@ -24,7 +22,6 @@ D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabal
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\obj\Debug\netcoreapp3.1\Trabalho Pratico.dll
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\obj\Debug\netcoreapp3.1\Trabalho Pratico.pdb
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\obj\Debug\netcoreapp3.1\Trabalho Pratico.genruntimeconfig.cache
-D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\corpo.xnb
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.exe
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.deps.json
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Trabalho Pratico.runtimeconfig.json
@@ -66,3 +63,19 @@ D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Tr
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\tail_up.xnb
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\background.xnb
 D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico_OLD\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\font.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\apple.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\background.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\body_horizontal.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\body_vertical.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\font.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\head_down.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\head_left.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\head_right.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\head_up.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\tail_down.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\tail_left.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\tail_right.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\tail_up.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\button.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\mainMenuBackground.xnb
+D:\Pedro Leiras\IPCA\EDJD 1ANO\S2\TDV\TP-TDV-18550-23472\Trabalho Pratico\Trabalho Pratico\bin\Debug\netcoreapp3.1\Content\fontMenu.xnb

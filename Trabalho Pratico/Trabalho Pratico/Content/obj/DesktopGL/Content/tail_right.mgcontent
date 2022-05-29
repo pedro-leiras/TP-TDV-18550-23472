@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico_OLD/Trabalho Pratico/Content/tail_right.png</SourceFile>
+  <SourceFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/tail_right.png</SourceFile>
   <SourceTime>2022-05-27T13:51:34+01:00</SourceTime>
-  <DestFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico_OLD/Trabalho Pratico/Content/bin/DesktopGL/Content/tail_right.xnb</DestFile>
-  <DestTime>2022-05-27T13:52:21.2714632+01:00</DestTime>
+  <DestFile>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/bin/DesktopGL/Content/tail_right.xnb</DestFile>
+  <DestTime>2022-05-28T10:48:55.3971657+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T17:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

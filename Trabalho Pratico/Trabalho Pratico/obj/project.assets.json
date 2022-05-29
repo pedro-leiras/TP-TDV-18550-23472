@@ -181,11 +181,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico_OLD\\Trabalho Pratico\\Trabalho Pratico.csproj",
+      "projectUniqueName": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico\\Trabalho Pratico\\Trabalho Pratico.csproj",
       "projectName": "Trabalho Pratico",
-      "projectPath": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico_OLD\\Trabalho Pratico\\Trabalho Pratico.csproj",
+      "projectPath": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico\\Trabalho Pratico\\Trabalho Pratico.csproj",
       "packagesPath": "C:\\Users\\Pedro Leiras\\.nuget\\packages\\",
-      "outputPath": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico_OLD\\Trabalho Pratico\\obj\\",
+      "outputPath": "D:\\Pedro Leiras\\IPCA\\EDJD 1ANO\\S2\\TDV\\TP-TDV-18550-23472\\Trabalho Pratico\\Trabalho Pratico\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
