@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Trabalho_Pratico
 {
-    class SnakePart : Sprite
+    public class SnakePart : Sprite
     {
         public SnakePart(Texture2D texture, Vector2 pos, Direction direction, Rectangle screen) : base(texture, pos, direction, screen)
         {

@@ -25,18 +25,6 @@
 /processorParam:TextureFormat=Color
 /build:apple.png
 
-#begin background.jpg
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:background.jpg
-
 #begin body_horizontal.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -72,6 +60,24 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:button.png
+
+#begin cactus.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:cactus.png
+
+#begin eat.ogg
+/importer:OggImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:eat.ogg
 
 #begin font.spritefont
 /importer:FontDescriptionImporter
@@ -135,6 +141,30 @@
 /processorParam:TextureFormat=Color
 /build:head_up.png
 
+#begin level1_background.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:level1_background.jpg
+
+#begin level2_background.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:level2_background.jpg
+
 #begin mainMenuBackground.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -194,4 +224,22 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:tail_up.png
+
+#begin theme-song.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:theme-song.ogg
+
+#begin watermelon.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:watermelon.png
 

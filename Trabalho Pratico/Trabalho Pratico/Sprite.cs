@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Trabalho_Pratico
 {
-    class Sprite
+    public class Sprite
     {
         public Texture2D texture;
         protected Rectangle screen;

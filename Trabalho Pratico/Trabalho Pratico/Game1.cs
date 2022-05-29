@@ -38,7 +38,8 @@ namespace Trabalho_Pratico
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            _currentState = new MainMenu(this, _graphics.GraphicsDevice, Content);
+            Sounds backgroundSound = new Sounds(Content);
+            _currentState = new MainMenu(this, _graphics.GraphicsDevice, Content, backgroundSound, false);
         }
 
         protected override void Update(GameTime gameTime)

@@ -5,23 +5,33 @@
   <Config />
   <SourceFiles>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/apple.png</File>
-    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/background.jpg</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/body_horizontal.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/body_vertical.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/button.png</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/cactus.png</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/eat.ogg</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/font.spritefont</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/fontMenu.spritefont</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/head_down.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/head_left.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/head_right.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/head_up.png</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/level1_background.jpg</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/level2_background.jpg</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/mainMenuBackground.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/tail_down.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/tail_left.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/tail_right.png</File>
     <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/tail_up.png</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/theme-song.ogg</File>
+    <File>D:/Pedro Leiras/IPCA/EDJD 1ANO/S2/TDV/TP-TDV-18550-23472/Trabalho Pratico/Trabalho Pratico/Content/watermelon.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

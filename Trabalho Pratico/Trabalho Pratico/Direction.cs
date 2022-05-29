@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Trabalho_Pratico
 {
-    enum Direction
+    public enum Direction
     {
         Up,
         Down,

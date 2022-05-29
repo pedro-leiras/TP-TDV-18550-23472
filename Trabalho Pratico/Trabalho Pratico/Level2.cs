@@ -1,53 +1,80 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Trabalho_Pratico;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Trabalho_Pratico
 {
-    public class GameState : State
+    public class Level2 : State
     {
-        Game1 game;
-        SpriteFont font;
-        Texture2D background, border, snakePartsTexture;
-        Rectangle screen;
-        Random rnd;
-        Fruit fruit;
-        SnakePart head;
-        List<SnakePart> snakeParts;
+        private Game1 game;
+        private SpriteFont font;
+        private Texture2D background, border, snakePartsTexture;
+        private Rectangle screen;
+        private Random rnd;
+        private Fruit fruit;
+        private SnakePart head;
+        private List<SnakePart> snakeParts;
+        private List<Cactus> cactus;
+        private Sounds backgroundSound;
+        private List<SoundEffect> soundEffects;
 
         private const int textureSize = 30, borderWidth = 40;
-        int velocity, currentScore = 0;
+        private int velocity, currentScore = 0;
 
-        bool isGameOver = false;
+        private bool isGameOver = false, isMuted = false;
 
-        public GameState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content) : base(game, graphicsDevice, content)
+        public Level2(Game1 game, GraphicsDevice graphicsDevice, ContentManager content, Sounds backgroundSound, bool isMuted, int score, List<SnakePart> snakeParts, Fruit fruit, List<Cactus> cactus) : base(game, graphicsDevice, content)
         {
             this.game = game;
-            border = new Texture2D(graphicsDevice, game.screenWidth, game.screenHeight);
+            this.isMuted = isMuted;
+            this.backgroundSound = backgroundSound;
 
             screen = new Rectangle(0, 0, game.screenWidth, game.screenHeight);
+            border = new Texture2D(graphicsDevice, game.screenWidth, game.screenHeight);
+            CreateBorder(border, borderWidth, Color.Wheat);
+
+            soundEffects = new List<SoundEffect>();
+            soundEffects.Add(_content.Load<SoundEffect>("eat"));
+
             rnd = new Random();
-            snakeParts = new List<SnakePart>();
             velocity = textureSize;
-            CreateBorder(border, borderWidth, Color.Green);
-            background = _content.Load<Texture2D>("background");
+
+            background = _content.Load<Texture2D>("level2_background");
             font = _content.Load<SpriteFont>("font");
+            this.snakeParts = new List<SnakePart>();
+            this.snakeParts.Clear();
+            this.cactus = new List<Cactus>();
+            this.cactus.Clear();
 
-            fruit = new Fruit(_content.Load<Texture2D>("apple"), new Vector2(0, 0), Direction.None, screen);
-            fruit.Pos = fruit.GenerateFruitLocation(snakeParts, textureSize, game.screenWidth, game.screenHeight);
+            if (score >= 0) { 
+                this.currentScore = score;
+            }
 
-            head = new SnakePart(_content.Load<Texture2D>("head_right"), new Vector2(80, 80), Direction.Right, screen);
-            snakePartsTexture = _content.Load<Texture2D>("body_horizontal");
-            snakeParts.Clear();
-            snakeParts.Add(head);
-
-            for (int i = 0; i < 3; i++)
+            if (snakeParts != null && fruit != null && cactus != null)
             {
-                snakeParts[0].GrowSnake(snakeParts, snakePartsTexture, textureSize);
+                
+                this.snakeParts = snakeParts;
+                this.fruit = fruit;
+                this.cactus = cactus;
+            }
+            else
+            {
+                this.fruit = new Fruit(_content.Load<Texture2D>("watermelon"), new Vector2(0, 0), Direction.None, screen);
+                this.fruit.Pos = this.fruit.GenerateFruitLocation(this.snakeParts, textureSize, game.screenWidth, game.screenHeight);
+
+                head = new SnakePart(_content.Load<Texture2D>("head_right"), new Vector2(80, 80), Direction.Right, screen);
+                snakePartsTexture = _content.Load<Texture2D>("body_horizontal");
+                this.snakeParts.Add(head);
+
+                for (int i = 0; i < 3; i++)
+                {
+                    this.snakeParts[0].GrowSnake(this.snakeParts, snakePartsTexture, textureSize);
+                }
             }
         }
 
@@ -57,6 +84,11 @@ namespace Trabalho_Pratico
 
             spriteBatch.Draw(background, new Vector2(-10, 0), Color.White);
             fruit.Draw(spriteBatch);
+
+            foreach(Cactus c in cactus)
+            {
+                c.Draw(spriteBatch);
+            }
 
             for (int i = 0; i < snakeParts.Count; i++)
             {
@@ -126,17 +158,28 @@ namespace Trabalho_Pratico
             spriteBatch.Draw(border, new Vector2(0, 0), Color.White);
 
             spriteBatch.DrawString(font, "Score: " + currentScore, new Vector2(7, 5), Color.Black);
-            spriteBatch.DrawString(font, "LEVEL 1", new Vector2(500, 5), Color.Black);
+            spriteBatch.DrawString(font, "LEVEL 2", new Vector2(500, 5), Color.Black);
             spriteBatch.End();
 
         }
 
         public override void Update(GameTime gameTime)
         {
-            isGameOver = snakeParts[0].ScreenBorders(borderWidth, textureSize);
+            if (Keyboard.GetState().IsKeyDown(Keys.P))
+            {
+                _game.ChangeState(new GamePaused(_game, _graphicsDevice, _content, backgroundSound, isMuted, 2, currentScore, snakeParts, fruit, cactus));
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.M))
+            {
+                isMuted = !isMuted;
+                backgroundSound.SoundState(isMuted);
+            }
 
             if (!isGameOver)
             {
+                isGameOver = snakeParts[0].ScreenBorders(borderWidth, textureSize);
+                
                 foreach (SnakePart s in snakeParts)
                 {
                     s.Update(gameTime, velocity);
@@ -147,7 +190,16 @@ namespace Trabalho_Pratico
 
                 if (snakeParts[0].SpriteBox.Intersects(fruit.SpriteBox))
                 {
+                    if (!isMuted)
+                    {
+                        soundEffects[0].Play();
+                    }
+
                     fruit.Pos = fruit.GenerateFruitLocation(snakeParts, textureSize, game.screenWidth, game.screenHeight);
+
+                    Cactus aux = new Cactus(_content.Load<Texture2D>("cactus"), new Vector2(0, 0), Direction.None, screen);
+                    aux.Pos = aux.GenerateCactusLocation(cactus, snakeParts, fruit, textureSize, game.screenWidth, game.screenHeight);
+                    cactus.Add(aux);
 
                     currentScore += 10;
 
@@ -158,13 +210,22 @@ namespace Trabalho_Pratico
                 {
                     if (snakeParts[0].SpriteBox.Intersects(snakeParts[i].SpriteBox))
                     {
-                        _game.ChangeState(new GameOver(_game, _graphicsDevice, _content, currentScore));
+                        isGameOver = true;
+                    }
+                }
+
+                foreach (Cactus c in cactus)
+                {
+                    if (snakeParts[0].SpriteBox.Intersects(c.SpriteBox))
+                    {
+                        isGameOver = true;
+                        break;
                     }
                 }
             }
             else
             {
-                _game.ChangeState(new GameOver(_game, _graphicsDevice, _content, currentScore));
+                _game.ChangeState(new GameOver(_game, _graphicsDevice, _content, backgroundSound, isMuted, currentScore));
             }
         }
 
